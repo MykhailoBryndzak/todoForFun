@@ -11,7 +11,7 @@ export const BlogList: React.FC<TodoListProps> = ({posts, onRemove}) => {
     return <p className="center">Немає записів!</p>
   }
   return (
-    <ul className="todo">
+    <ul className="posts">
       {posts.map(post => {
         return (
           <li className="post" key={post.id}>

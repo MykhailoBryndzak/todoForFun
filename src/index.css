@@ -38,12 +38,17 @@ code {
     cursor: pointer;
     padding: 1rem;
     background: #f3f3f3;
+    color: #525252;
 }
 
 .todo i {
+
     z-index: 2;
 }
 
+.posts {
+    margin-top: 50px;
+}
 .post {
     background: lightcyan;
     padding: 0 20px 15px 20px;

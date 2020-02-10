@@ -3,7 +3,7 @@ import {BlogForm} from "../components/BlogForm";
 import {BlogList} from "../components/BlogList";
 import {IPost} from "../interfaces";
 
-export const Blog: React.FC = () => {
+  export const BlogPage: React.FC = () => {
   const [posts, setPosts] = useState<IPost[]>([]);
   useEffect(() => {
     const saved = JSON.parse(localStorage.getItem("blog") || '[]') as IPost[];
@@ -28,6 +28,8 @@ export const Blog: React.FC = () => {
 
   return (
     <>
+      <h3>Блог</h3>
+      <br/>
       <BlogForm onAddPost={addHandler} />
       <BlogList posts={posts} onRemove={removeHandler}/>
     </>

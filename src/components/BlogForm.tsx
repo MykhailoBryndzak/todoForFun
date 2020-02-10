@@ -37,6 +37,7 @@ export const BlogForm: React.FC<BlogFormProps> = props => {
 
       setPostTitle("");
       setPostText("");
+      refText.current!.style.cssText = 'height:' + refText.current!.scrollHeight;
     }
   };
 
