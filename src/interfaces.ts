@@ -3,3 +3,9 @@ export interface ITodo {
   id: number,
   completed: boolean
 }
+
+export interface IPost {
+  title: string,
+  id: number,
+  text: string
+}

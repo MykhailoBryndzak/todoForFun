@@ -13,8 +13,8 @@ export const TodoList: React.FC<TodoListProps> = ({todos, onRemove, onToggle}) =
   }
 
   const removeTodoHandler = (event: React.MouseEvent, id: number) => {
-      event.preventDefault();
-      onRemove(id);
+    event.preventDefault();
+    onRemove(id);
   };
   return (
     <ul className="todo">
